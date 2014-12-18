@@ -1,0 +1,6 @@
+syntax "nanorc" "nanorc$"
+color brightcyan "\<((un)?set|color|icolor|syntax|include)\>"
+color brightyellow "\<(bright)?(white|black|red|blue|green|yellow|magenta|cyan)\>"
+color brightblue "\<(start|end)\>"
+color brightgreen "["][^"]*[^\\]["]" "["]{3}.*[^\\]["]{3}"  "["]["]"
+color brightred "#.*$"

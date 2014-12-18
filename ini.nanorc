@@ -1,0 +1,3 @@
+syntax "ini" "\.ini$"
+color brightgreen "\[.*\]"
+color brightred "#.*$"
