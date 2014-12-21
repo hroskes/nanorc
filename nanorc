@@ -218,5 +218,5 @@ include "~/..nanorc/sh.nanorc"
 include "/usr/share/nano/tex.nanorc"
 include "~/..nanorc/python.nanorc"
 include "~/..nanorc/html.nanorc"
-include ~/..nanorc/ini.nanorc
-include ~/..nanorc/nanorc.nanorc
+include "~/..nanorc/ini.nanorc"
+include "~/..nanorc/nanorc.nanorc"
