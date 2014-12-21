@@ -74,7 +74,7 @@ set nowrap
 ## You can get old nano quoted-justify behavior via:
 # set quotestr "(> )+"
 
-## Do extended regular expression searches by default 
+## Do extended regular expression searches by default
 # set regexp
 
 ## Use smooth scrolling as the default
@@ -112,10 +112,10 @@ set nowrap
 ## to set the background color to black or white.
 ##
 # syntax "c-file" "\.(c|h)$"
-# color red "\<[A-Z_]{2,}\>" 
-# color green "\<(float|char|int|void|static|const|struct)\>" 
+# color red "\<[A-Z_]{2,}\>"
+# color green "\<(float|char|int|void|static|const|struct)\>"
 # color brightyellow "\<(if|while|do|else|case|switch)\>"
-# color brightcyan "^#( 	)*(define|include|ifn?def|endif|elif|else|if)" 
+# color brightcyan "^#( 	)*(define|include|ifn?def|endif|elif|else|if)"
 ##
 ## You will in general want your comments and strings to come last,
 ## because syntax highlighting rules will be applied in the order they
