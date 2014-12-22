@@ -214,6 +214,7 @@ set nowrap
 
 
 include "~/..nanorc/c.nanorc"
+include "~/..nanorc/fortran.nanorc"
 include "~/..nanorc/sh.nanorc"
 include "/usr/share/nano/tex.nanorc"
 include "~/..nanorc/python.nanorc"
