@@ -1,3 +1,5 @@
 syntax "ini" "\.ini$"
 color brightgreen "\[.*\]"
-color brightred "#.*$"
+color brightred "^#.*$"
+color brightred "( |	);.*$"
+color brightred "^;.*$"
