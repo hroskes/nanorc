@@ -6,7 +6,7 @@ color green "\<(float|double|bool|char|int|short|long|sizeof|enum|void|static|co
 color green "\<((u|U)_?)?((i|I)nt|Long)(8|16|32|64|ptr)?_t\>"
 color green "\<(class|namespace|template|public|protected|private|typename|this|friend|virtual|using|mutable|volatile|register|explicit)\>"
 color green "\<(true|false)\>"
-color brightgreen "\<T(Branch|Canvas|F(1|2)|File|Graph(Errors)?|H((1|2|3)(C|D|F|I)?|Stack)|LorentzVector|Profile|String|Tree|Vector3)\>"
+color brightgreen "\<T(Branch|Canvas|Chain|F(1|2)|File|Graph(Errors)?|H((1|2|3)(C|D|F|I)?|Stack)|List|LorentzVector|Profile|String|Tree|Vector3)\>"
 color cyan "\<(std|cout|cin|cerr|clog|endl|vector)\>"
 color brightyellow "\<(for|if|while|do|else|case|default|switch)\>"
 color brightyellow "\<(try|throw|catch|operator|new|delete)\>"
