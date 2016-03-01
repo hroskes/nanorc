@@ -3,7 +3,7 @@
 syntax "python" "(\.py|_py\.txt)$"
 icolor brightblue "def [0-9A-Z_]+"
 color brightcyan "\<(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|map|not|or|pass|print|raise|return|try|while|with|yield)\>"
-color brightyellow "\<(True|False|None|(Attribute|Index|IO|Key|Name|NotImplemented|OS|Overflow|Runtime|Type|Value|ZeroDivision|AllInOne)Error)\>"
+color brightyellow "\<(True|False|None|(Attribute|Index|IO|Key|Name|NotImplemented|OS|Overflow|Runtime|Syntax|Type|Value|ZeroDivision|AllInOne)Error)\>"
 
 #http://fahhem.com/blog/2010/09/nanorc-for-python/
 
@@ -28,3 +28,5 @@ color brightgreen "["][^"]*#[^"]*[^\\]?["]" "["]{3}.*[^\\]["]{3}"
 
 ## for comments with an even number of quotes
 color brightred "#([^'"]*['"][^'"]*['"])+[^'"]*$"
+
+color brightmagenta "^ *@[a-zA-Z_][a-zA-Z_0-9]* *$"
