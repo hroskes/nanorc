@@ -47,4 +47,4 @@ icolor cyan "<[^=     ]*>" ""(\\.|[^"])*""
 icolor cyan "<[^=     ]*>" "'(\\.|[^"])*'"
 
 ## Comment highlighting
-icolor brightred "!.*$" "(^ *[Cc][Cc-]*| [Cc]) .*$" "^ *[*].*$"
+icolor brightred "!.*$" "(^ *[Cc][Cc*-]*| [Cc]) .*$" "^ *[*].*$"
