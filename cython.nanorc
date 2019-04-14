@@ -1,0 +1,39 @@
+## Here is an example for Python.
+##
+
+syntax "cython" "(\.pyx)$"
+icolor brightblue "^[ 	]*def  *[0-9A-Z_]+"
+icolor brightgreen "^[ 	]*class  *[0-9A-Z_]+"
+color brightcyan "\<(and|as|assert|break|class|continue|def|del|elif|else|except|exec|finally|for|from|global|if|import|in|is|lambda|map|not|or|pass|print|raise|return|try|while|with|yield)\>"
+color brightyellow "\<(True|False|None|(Attribute|Index|IO|Key|Name|NotImplemented|OS|Overflow|Runtime|Syntax|Type|Value|ZeroDivision|AllInOne)Error)\>"
+
+#http://fahhem.com/blog/2010/09/nanorc-for-python/
+
+color brightmagenta "^ *@.*$"
+
+color brightgreen "['][^']*[^\\]?[']" "[']{3}.*[^\\][']{3}"
+color brightgreen "["][^"]*[^\\]?["]" "["]{3}.*[^\\]["]{3}"
+color brightgreen """".*""""
+
+## Triple-quotes
+#color brightgreen start=""""[^"]?" end=""""" start="'''[^']?" end="'''"
+#color brightgreen start=""""$" end=""""$" start="'''$" end="'''$"
+
+## normal comments with no quotes
+color brightred "#[^'"]*$"
+## possibly normal, has some quotes but will check for double later
+color brightred "#[^'"]*"
+## these are no-doubt valid
+color brightred "^\s*#.*"
+
+## for strings with # in it (overriding possibly normal comments from earlier
+color brightgreen "['][^']*#[^']*[^\\]?[']" "[']{3}.*[^\\][']{3}"
+color brightgreen "["][^"]*#[^"]*[^\\]?["]" "["]{3}.*[^\\]["]{3}"
+
+## for comments with an even number of quotes
+color brightred "#([^'"]*['"][^'"]*['"])+[^'"]*$"
+
+# Cython Keyword Color, from https://github.com/scopatz/nanorc/blob/ee21b12aa30d2e8edffc15ab2f9fc488fef3165c/cython.nanorc#L15
+color green "\<(cdef|cimport|cpdef|cppclass|ctypedef|extern|include|namespace|property|struct)\>"
+color red "\<(bint|char|double|int|public|void|unsigned)\>"
+
