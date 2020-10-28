@@ -52,8 +52,8 @@
 ## Don't display the help lists at the bottom of the screen
 # set nohelp
 
-## Soft wrap text
-set softwrap
+## Don't wrap text at all
+set nowrap
 
 ## Set operating directory.  nano will not read or write files outside
 ## this directory and its subdirectories.  Also, the current directory
